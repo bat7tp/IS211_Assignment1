@@ -1,7 +1,7 @@
 
 # Part 1 of Assignment 1
 
-
+'''create the function to test if numbers are divisible by divide number. Store how many are'''
 def list_divide(numbers, divide=2):
     list = []
     for x in numbers:
@@ -9,7 +9,7 @@ def list_divide(numbers, divide=2):
             list.append(x)
     return (len(list))
 
-
+'''test the various arrays and cause an error to be raised if the return value is incorrect'''
 def test_list_divide():
     a = list_divide([1, 2, 3, 4, 5])
 
@@ -36,7 +36,7 @@ def test_list_divide():
     if e != 5:
         raise List_Divide_Exception()
 
-
+'''create the exception to potentially be raised'''
 class List_Divide_Exception(Exception):
     pass
 
